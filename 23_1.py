@@ -16,10 +16,10 @@ class Solution:
                 list = list.next
 
         data.sort()
-        tmp = ListNode(data[0])
+        tmp = ListNode()
         head = tmp
-        for item in data[1:]:
+        for item in data:
             tmp.next = ListNode(item)
             tmp = tmp.next
 
-        return head
+        return head.next
